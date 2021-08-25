@@ -5,3 +5,13 @@ Email: 2514374431@qq.com
 
 Copyright (C) 2021 IYATT-yx  
 基于 [AGPL-3.0](LICENSE) 许可
+
+测试环境:  
+Ubuntu 20.04  
+Python 3.8.11  
+gcc/g++ 9.3.0  
+cmake 3.16.3  
+NVIDIA Driver 270.57.02  
+CUDA 11.4  
+OpenCV 4.5.3  
+dlib 19.22.1  
