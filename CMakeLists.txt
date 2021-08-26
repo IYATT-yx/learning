@@ -8,7 +8,7 @@ if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU" AND ${CMAKE_SYSTEM_NAME} STREQUAL "L
     find_package(OpenCV 4.5.3 REQUIRED)
     find_package(dlib 19.22.0 REQUIRED)
     
-    add_subdirectory(${CMAKE_SOURCE_DIR}/C++/face-detection)
+    add_subdirectory(${CMAKE_SOURCE_DIR}/src/26_face-detection)
 
 else ()
     message(FATAL_ERROR "请在 Linux 下使用 GNU gcc/g++ 构建")
