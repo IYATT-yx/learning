@@ -26,7 +26,11 @@
 	#include <fcntl.h>
 	#include <unistd.h>
 #elif
-    #error "请在 Linux 下构建该程序"
+    #error "请在 Linux 下构建该程序！"
+#endif
+
+#if !defined(__x86_64__)
+	#error "请在64位环境下构建！"
 #endif
 
 /**
@@ -175,12 +179,12 @@ int main(int argc, char **argv)
 				MD5_CTX ctx;
 				MD5_Init(&ctx);
 
-				char buff[1024] = {0};
+				char buff[64] = {0};
 				while (1)
 				{
-					memset(buff, 0, 1024);
+					memset(buff, 0, 64);
 
-					ssize_t ret = read(fd, buff, 1024);
+					ssize_t ret = read(fd, buff, 64);
 					if (ret > 0)
 					{
 						MD5_Update(&ctx, buff, (size_t)ret);
