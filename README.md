@@ -16,3 +16,4 @@ CUDA 11.4
 OpenCV 4.5.3  
 dlib 19.22.1  
 openssl（libssl-dev） 1.1.1  
+xlrd 1.2.0  
