@@ -11,3 +11,7 @@ target_link_libraries(collect ${OpenCV_LIBS})
 # 帧率获取与计算
 add_executable(frame ${CMAKE_CURRENT_SOURCE_DIR}/frame.cpp)
 target_link_libraries(frame ${OpenCV_LIBS})
+
+# 单目相机矫正
+add_executable(monocular-undistortion ${CMAKE_CURRENT_SOURCE_DIR}/monocular-undistortion.cpp)
+target_link_libraries(monocular-undistortion ${OpenCV_LIBS})
