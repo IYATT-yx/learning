@@ -20,3 +20,4 @@ xlrd 1.2.0
 
 Windows 10 21H1  
 MSBuild (Visual Studio 生成工具 2019)  
+Python 3.8.10  
