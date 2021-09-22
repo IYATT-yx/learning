@@ -1,3 +1,6 @@
+注：  
+Linux 下默认 python 和 pip 命令对应版本为 2.x 即 python2 和 pip2，要使用 3.x 版本需要使用命令 python3 和 pip3。然而在 Windows 下，安装 Python3 后，直接使用 python 和 pip 就对应是 3.x 了。所以下面的参考命令操作在 Windows 下执行的话，请换为 python 和 pip。  
+
 1.构建测试  
 ```bash
 # 会在当前路径下生成 py 可直接导入的库文件
