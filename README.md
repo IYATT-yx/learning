@@ -19,5 +19,5 @@ openssl（libssl-dev） 1.1.1
 xlrd 1.2.0  
 
 Windows 10 21H1  
-MSBuild (Visual Studio 生成工具 2019)  
+[MSBuild (Visual Studio 生成工具 2019)](docs/MSBuild.pdf)  
 Python 3.8.10  
