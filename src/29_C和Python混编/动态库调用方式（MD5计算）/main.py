@@ -44,7 +44,7 @@ if __name__ == '__main__':
     md5 = lib.md5_16(md5)
     print(md5.decode('ascii'))
 
-    # 123456789 以 123456789 作为密钥加密计算为： 
+    # 123456789 以 123456789 作为密钥加密计算为： 3d88017cab7593b8d71dc5852211fad3
     lib.hmac_md5.restype = c_char_p
     hmac = lib.hmac_md5(string, len(string), string, len(string))
     print(hmac.decode('ascii'))
