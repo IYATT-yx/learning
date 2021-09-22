@@ -17,3 +17,6 @@ OpenCV 4.5.3
 dlib 19.22.1  
 openssl（libssl-dev） 1.1.1  
 xlrd 1.2.0  
+
+Windows 10 21H1  
+MSBuild (Visual Studio 生成工具 2019)  
