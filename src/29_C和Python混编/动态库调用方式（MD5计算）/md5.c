@@ -1,5 +1,5 @@
 /**
- * @file shared.c
+ * @file md5.c
  * @brief MD5库
  * MD5 和 HAMC-MD5
  * 
