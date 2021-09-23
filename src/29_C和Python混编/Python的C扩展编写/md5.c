@@ -439,7 +439,7 @@ PyMethodDef MD5Methods[] =
 };
 
 // 模块定义结构
-static struct PyModuleDef md5module =
+struct PyModuleDef md5module =
 {
 	PyModuleDef_HEAD_INIT,
 	"MD5",
