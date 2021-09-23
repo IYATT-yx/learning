@@ -42,3 +42,8 @@ pip3 install build/[xxxxxxxx].whl
 # 卸载
 pip3 uninstall -y md5
 ```
+
+```bash
+# 构建 Windows 二进制安装包
+python setup.py bdist_wininst
+```
