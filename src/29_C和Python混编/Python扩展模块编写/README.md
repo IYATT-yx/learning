@@ -28,3 +28,17 @@ pip3 install dist/MD5-1.0.tar.gz
 # 卸载
 pip3 uninstall -y md5
 ```
+
+```bash
+# 安装依赖
+pip3 install wheel
+
+# 发布二进制包
+pip3 wheel --wheel-dir=build .
+
+# 安装
+pip3 install build/[xxxxxxxx].whl
+
+# 卸载
+pip3 uninstall -y md5
+```
