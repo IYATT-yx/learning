@@ -18,7 +18,7 @@ cmake 3.16.3
 [dlib 19.22.1](https://blog.iyatt.com/%e5%bc%80%e5%8f%91/2021/07/19/dlib%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85/)  
 openssl（libssl-dev） 1.1.1  
 xlrd 1.2.0  
-[MXNet 1.8.0](https://github.com/apache/incubator-mxnet)  
+[MXNet 1.8.0](src/31_深度学习/MXNet/README.md)  
 Matplotlib 3.4.3  
 NumPy 1.21.2  
 
