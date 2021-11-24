@@ -16,4 +16,3 @@ Copyright (C) 2021 IYATT-yx
 [dlib 19.22.1 编译安装参考](https://blog.iyatt.com/%e5%bc%80%e5%8f%91/2021/07/19/dlib%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85/)  
 [MXNet 1.8.0 编译安装参考](src/31_深度学习/MXNet/README.md)  
 [MSBuild (Visual Studio 生成工具 2019) 下载](https://visualstudio.microsoft.com/zh-hans/downloads/)  
-[Python 3.8.10 win版](https://www.python.org/downloads/windows/)  
