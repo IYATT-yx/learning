@@ -16,7 +16,7 @@ if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU" AND ${CMAKE_SYSTEM_NAME} STREQUAL "L
     add_subdirectory(${CMAKE_SOURCE_DIR}/src/26_face-detection) # 人脸检测
     add_subdirectory(${CMAKE_SOURCE_DIR}/src/27_md5calc) # md5 计算
     add_subdirectory(${CMAKE_SOURCE_DIR}/src/30_双目相机)
-    add_subdirectory(${CMAKE_SOURCE_DIR}/src/32_交通识别)
+    add_subdirectory(${CMAKE_SOURCE_DIR}/src/22_套接字/混合通信)
 
 else ()
     message(FATAL_ERROR "请在 Linux 下使用 GNU gcc/g++ 构建")
