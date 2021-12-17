@@ -6,12 +6,15 @@
 @copyright Copyright (C) 2021 IYATT-yx
             基于 AGPL-3.0 许可
 """
+from io import BytesIO
 from tkinter import *
 from PIL import ImageTk, Image # sudo apt install python3-pil python3-pil.imagetk
 from face_recognition import *
 import numpy as np
 import sys
 import cv2 as cv
+import tensorflow as tf
+from tensorflow.python.ops.gen_math_ops import Imag
 
 
 class Application(Frame):
@@ -20,21 +23,22 @@ class Application(Frame):
         self.__master = master
         self.__path = path
 
-    def createWidgets(self):
-        # # 使用 OpenCV 打开图片
-        # src = cv.imread(pathName, 1)
-        # src = cv.cvtColor(src, cv.COLOR_BGR2RGBA)
-
-        # # 使用 face_recognition 打开图片
-        # src = load_image_file(pathName)
-
-        # 图像需要为全局，不然无法显示空白
+    def createWidgets(self, openWay):
         global img
 
-        # # 如果使用以上两种方式之一打开图片，则得到的图像类型为 numpy 数组，需要转换
-        # img = ImageTk.PhotoImage(image=Image.fromarray(src))
         try:
-            img = ImageTk.PhotoImage(image=Image.open(self.__path))
+            if openWay == 'cv':  # OpenCV
+                src = cv.imread(self.__path, cv.IMREAD_COLOR)
+                if src is None:
+                    raise FileNotFoundError
+                src = cv.cvtColor(src, cv.COLOR_BGR2RGBA)
+                img = ImageTk.PhotoImage(image=Image.fromarray(src))
+            elif openWay == 'fr':  # face_recognition
+                src = load_image_file(self.__path)
+                img = ImageTk.PhotoImage(image=Image.fromarray(src))
+
+            elif openWay == 'pil':  # PIL
+                img = ImageTk.PhotoImage(image=Image.open(self.__path))
         except FileNotFoundError:
             print('指定的图片路径无法打开，请确认图片是否存在！')
             exit()
@@ -50,5 +54,5 @@ if __name__ == '__main__':
     root = Tk()
     root.title(sys.argv[1])
     app = Application(root, sys.argv[1])
-    app.createWidgets()
+    app.createWidgets('pil')
     root.mainloop()
